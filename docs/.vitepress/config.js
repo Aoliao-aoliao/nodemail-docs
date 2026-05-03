@@ -21,7 +21,11 @@ export default defineConfig({
       { text: '快速开始', link: '/guide/quick-start' },
       { text: '管理员指南', link: '/admin/' },
       { text: 'API', link: '/api/' },
+      { text: '进入邮箱', link: 'https://to9.us/login' },
       { text: '常见问题', link: '/faq' }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Aoliao-aoliao/nodemail-docs', ariaLabel: 'GitHub 文档仓库' }
     ],
     sidebar: {
       '/guide/': [
