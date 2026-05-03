@@ -19,8 +19,7 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '快速开始', link: '/guide/quick-start' },
-      { text: '管理员指南', link: '/admin/' },
-      { text: 'API', link: '/api/' },
+      { text: '使用指南', link: '/guide/mail' },
       { text: '进入邮箱', link: 'https://to9.us/login' },
       { text: '常见问题', link: '/faq' }
     ],
@@ -33,30 +32,10 @@ export default defineConfig({
           text: '使用指南',
           items: [
             { text: '快速开始', link: '/guide/quick-start' },
-            { text: 'DNS 配置', link: '/guide/dns' },
-            { text: '发信信誉', link: '/guide/mail-reputation' },
-            { text: '第三方发信通道', link: '/guide/send-channel' }
-          ]
-        }
-      ],
-      '/admin/': [
-        {
-          text: '管理员指南',
-          items: [
-            { text: '总览', link: '/admin/' },
-            { text: '域名管理', link: '/admin/domains' },
-            { text: '用户与邮箱', link: '/admin/users-mailboxes' },
-            { text: '安全策略', link: '/admin/security' }
-          ]
-        }
-      ],
-      '/api/': [
-        {
-          text: 'API 文档',
-          items: [
-            { text: 'API 总览', link: '/api/' },
-            { text: '认证', link: '/api/auth' },
-            { text: '邮箱与邮件', link: '/api/mail' }
+            { text: '收发邮件', link: '/guide/mail' },
+            { text: '邮箱管理', link: '/guide/mailboxes' },
+            { text: '个人设置', link: '/guide/settings' },
+            { text: '反馈与工单', link: '/guide/tickets' }
           ]
         }
       ]
@@ -80,7 +59,7 @@ export default defineConfig({
       }
     },
     footer: {
-      message: 'NodeMail 文档站仅介绍产品能力，主程序源码为私有部署版本。',
+      message: 'NodeMail 面向 NodeLoc 黄金会员及以上用户开放。',
       copyright: 'Copyright © 2026 NodeMail'
     }
   }
