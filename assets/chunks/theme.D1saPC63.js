@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/chunks/VPLocalSearchBox.BtVhC2ha.js","assets/chunks/framework.D6KCzf1D.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/chunks/VPLocalSearchBox.B5CpCby5.js","assets/chunks/framework.D6KCzf1D.js"])))=>i.map(i=>d[i]);
 import { d as defineComponent, c as createElementBlock, r as renderSlot, n as normalizeClass, o as openBlock, a as createTextVNode, t as toDisplayString, b as createBlock, w as withCtx, T as Transition, e as createCommentVNode, _ as _export_sfc, u as useData$1, i as isExternal, f as treatAsHtml, g as withBase, h as computed, j as createBaseVNode, k as unref, l as isActive, m as useMediaQuery, p as onMounted, q as onUpdated, s as onUnmounted, v as getScrollOffset, x as watchEffect, y as ref, z as watch, A as watchPostEffect, B as inBrowser, C as useRoute, D as shallowReadonly, E as shallowRef, F as onContentUpdated, G as Fragment, H as renderList, I as resolveComponent, J as createVNode, K as resolveDynamicComponent, L as EXTERNAL_URL_RE, M as useTemplateRef, N as useNavigatorLanguage, O as mergeProps, P as inject, Q as normalizeStyle, R as useWindowSize, S as onKeyStroke, U as nextTick, V as useWindowScroll, W as readonly, X as isObject, Y as defineAsyncComponent, Z as __vitePreload, $ as useScrollLock, a0 as provide, a1 as toHandlers, a2 as withKeys, a3 as onBeforeUnmount, a4 as withModifiers, a5 as useSlots } from "./framework.D6KCzf1D.js";
 const _sfc_main$Y = /* @__PURE__ */ defineComponent({
   __name: "VPBadge",
@@ -2346,7 +2346,7 @@ const _hoisted_1$f = { class: "VPNavBarSearch" };
 const _sfc_main$j = /* @__PURE__ */ defineComponent({
   __name: "VPNavBarSearch",
   setup(__props) {
-    const VPLocalSearchBox = defineAsyncComponent(() => __vitePreload(() => import("./VPLocalSearchBox.BtVhC2ha.js"), true ? __vite__mapDeps([0,1]) : void 0));
+    const VPLocalSearchBox = defineAsyncComponent(() => __vitePreload(() => import("./VPLocalSearchBox.B5CpCby5.js"), true ? __vite__mapDeps([0,1]) : void 0));
     const VPAlgoliaSearchBox = () => null;
     const { theme: theme2, localeIndex, lang } = useData();
     const provider = "local";
