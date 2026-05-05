@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: 使用指南
       link: /guide/mail
+    - theme: alt
+      text: 更新记录
+      link: /changelog
 
 features:
   - title: NodeLoc 登录
@@ -39,6 +42,8 @@ features:
 ## 项目状态
 
 NodeMail 当前是面向 NodeLoc 社区用户的邮箱服务，主要给黄金会员及以上用户使用。这里是公开说明页，用来介绍入口、使用流程和常见功能。
+
+功能调整、体验修复、安全检查和文档变更会统一记录在[更新记录](/changelog)里。用户遇到问题时，可以先查看最近更新，再通过反馈与工单页面提交 BUG。
 
 当前服务入口：
 

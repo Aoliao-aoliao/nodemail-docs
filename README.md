@@ -13,6 +13,7 @@ NodeMail 是面向 NodeLoc 黄金会员及以上用户开放的 Web 邮箱服务
 
 - 使用邮箱：<https://to9.us/login>
 - 查看文档：<https://aoliao-aoliao.github.io/nodemail-docs/>
+- 更新记录：<https://aoliao-aoliao.github.io/nodemail-docs/changelog>
 - 适用用户：NodeLoc 黄金会员及以上用户
 
 ## 主要能力
@@ -28,6 +29,14 @@ NodeMail 是面向 NodeLoc 黄金会员及以上用户开放的 Web 邮箱服务
 ## 说明
 
 NodeMail 不是群发邮件或营销邮件工具。为了保护域名和服务信誉，发信权限、频率和异常行为会受到限制。
+
+## 更新记录
+
+后续每次功能调整、体验修复、安全检查、文档更新都会写入更新记录：
+
+<https://aoliao-aoliao.github.io/nodemail-docs/changelog>
+
+如果发现 BUG，可以先查看最近更新是否已经处理；未处理的问题请在 NodeMail 里的反馈或工单页面提交，并尽量带上页面、操作步骤、截图、时间和设备类型。
 
 ## 本地预览
 

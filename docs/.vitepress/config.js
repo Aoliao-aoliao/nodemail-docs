@@ -20,6 +20,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '快速开始', link: '/guide/quick-start' },
       { text: '使用指南', link: '/guide/mail' },
+      { text: '更新记录', link: '/changelog' },
       { text: '进入邮箱', link: 'https://to9.us/login' },
       { text: '常见问题', link: '/faq' }
     ],
