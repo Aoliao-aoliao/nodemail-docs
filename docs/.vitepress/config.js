@@ -36,7 +36,8 @@ export default defineConfig({
             { text: '收发邮件', link: '/guide/mail' },
             { text: '邮箱管理', link: '/guide/mailboxes' },
             { text: '个人设置', link: '/guide/settings' },
-            { text: '反馈与工单', link: '/guide/tickets' }
+            { text: '反馈与工单', link: '/guide/tickets' },
+            { text: '更新记录', link: '/changelog' }
           ]
         }
       ]
