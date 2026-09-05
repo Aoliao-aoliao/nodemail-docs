@@ -8,7 +8,7 @@
 
 - 本地账号：输入用户名和密码。
 - NodeLoc OAuth：跳转到 NodeLoc 授权后返回草丛 Mail。
-- 邮箱注册：在 <https://to9.us/app/register> 填写用户名、邮箱和密码，再输入邮件验证码。
+- 邮箱注册：在 <https://to9.us/app/register> 填写用户名、找回邮箱和密码，再输入邮件验证码。正式系统当前开放注册，找回邮箱不能为空。
 
 如果忘记本地密码，可在 <https://to9.us/app/forgot-password> 使用已验证的绑定邮箱接收重置码。未绑定邮箱的账号需要联系管理员重置。
 
