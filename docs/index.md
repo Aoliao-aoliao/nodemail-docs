@@ -2,90 +2,62 @@
 layout: home
 
 hero:
-  name: NodeMail
-  text: 为 NodeLoc 高级用户准备的邮箱服务
-  tagline: 面向 NodeLoc 黄金会员及以上用户开放，使用 NodeLoc 第三方登录，提供简洁、可控的 Web 邮箱体验。
+  name: 草丛 Mail
+  text: 企业与个人邮箱完整指南
+  tagline: 网页邮箱、标准邮件协议、企业自有域名、组织协作、通知、套餐与开放 API 都集中在一个平台。
   image:
     src: /logo.svg
-    alt: NodeMail
+    alt: 草丛 Mail
   actions:
     - theme: brand
       text: 进入邮箱
-      link: https://to9.us/login
+      link: https://to9.us/app/
     - theme: alt
-      text: 快速开始
+      text: 用户快速开始
       link: /guide/quick-start
     - theme: alt
-      text: 使用指南
-      link: /guide/mail
-    - theme: alt
-      text: 更新记录
-      link: /changelog
+      text: 管理员指南
+      link: /admin/overview
 
 features:
-  - title: NodeLoc 登录
-    details: 通过 NodeLoc 第三方账号登录，无需在 NodeMail 单独注册密码账号。
-  - title: 黄金会员开放
-    details: 服务主要面向 NodeLoc 黄金会员及以上用户，后续可按社区规则调整开放范围。
-  - title: Web 邮箱体验
-    details: 提供收件箱、全部邮箱视图、写邮件、附件、标签、文件夹、草稿和搜索等常用邮件功能。
-  - title: 发信权限控制
-    details: 为保护域名信誉，发信权限可按域名关闭，用户需要申请后由管理员审核开放。
-  - title: 个人设置
-    details: 支持登录历史、通知设置、签名模板、图床、白名单、自动回复等常用设置。
-  - title: 安全策略
-    details: 支持保留邮箱名前缀、管理员权限隔离、登录历史、黑名单和发信频率限制。
-  - title: 邮件安全提示
-    details: 阅读邮件时会显示发件方 SPF、DKIM、DMARC 认证状态，帮助识别异常来信。
+  - title: 完整 Web 邮箱
+    details: 多邮箱统一收件箱、会话阅读、富文本写信、草稿、附件、搜索、文件夹、标签、规则和联系人。
+  - title: 企业邮局
+    details: 创建组织、接入自有域名、邀请成员、分配角色与邮箱，并按组织配置品牌和发信通道。
+  - title: 标准邮件协议
+    details: 通过应用专用密码连接 IMAPS、POP3S 和 SMTP Submission，继续使用常见桌面与移动客户端。
+  - title: 安全与可达性
+    details: SPF、DKIM、DMARC 状态提示，rspamd 反垃圾与隔离区，登录限流、TOTP 两步验证和审计日志。
+  - title: 套餐与计费
+    details: 个人 Pro、企业套餐、订单、钱包、在线支付、兑换码以及取消和恢复订阅流程。
+  - title: 通知与开放能力
+    details: 站内通知、浏览器通知、Telegram 通知、系统公告、个人 API 密钥和 OpenAPI 参考。
 ---
 
-## 项目状态
+## 当前正式版本
 
-NodeMail 当前是面向 NodeLoc 社区用户的邮箱服务，主要给黄金会员及以上用户使用。这里是公开说明页，用来介绍入口、使用流程和常见功能。
+本文档对应 2026 年 9 月 5 日上线的草丛 Mail 平台升级。正式入口如下：
 
-功能调整、体验修复、安全检查和文档变更会统一记录在[更新记录](/changelog)里。用户遇到问题时，可以先查看最近更新，再通过反馈与工单页面提交 BUG。
+- 产品官网：<https://to9.us/>
+- 邮箱应用：<https://to9.us/app/>
+- 登录页面：<https://to9.us/app/login>
+- 注册页面：<https://to9.us/app/register>
+- 开发者说明：<https://to9.us/app/manage/developer/docs>
 
-当前服务入口：
+旧地址 `/login`、`/admin`、`/manage`、`/inbox` 等仍会自动跳转到 `/app` 下对应页面，已有书签可以继续使用。
 
-```text
-https://to9.us/login
-```
+## 按身份阅读
 
-登录方式：
+| 身份 | 建议入口 | 主要内容 |
+| --- | --- | --- |
+| 普通用户 | [快速开始](/guide/quick-start) | 注册登录、创建邮箱、收发邮件、安全和通知 |
+| 企业所有者或管理员 | [企业邮局](/guide/organizations) | 组织、成员、自有域名、企业邮箱、品牌和套餐 |
+| 平台管理员 | [后台总览](/admin/overview) | 用户、域名、邮件流、发信策略、订单与平台设置 |
+| 自托管维护者 | [Docker 部署](/operations/deployment) | 服务结构、环境变量、迁移、升级和排障 |
+| API 使用者 | [开发者 API](/guide/developer-api) | API 密钥、认证方式、接口范围与安全建议 |
 
-```text
-NodeLoc 第三方登录
-```
+## 系统边界
 
-开放对象：
+草丛 Mail 是正常通信和企业邮箱平台，不是群发营销工具。系统会按用户、域名、套餐和管理员策略限制发信权限与频率，并可能拦截高风险收件人或异常内容。
 
-```text
-NodeLoc 黄金会员及以上用户
-```
-
-## 适合谁
-
-- NodeLoc 黄金会员及以上用户
-- 希望拥有一个轻量 Web 邮箱的社区用户
-- 需要临时或长期使用社区邮箱地址的用户
-
-## 你可以做什么
-
-- 使用 NodeLoc 账号登录 NodeMail
-- 创建和管理自己的邮箱地址
-- 默认进入第一个邮箱，也可以切换单个邮箱或全部邮箱视图
-- 收信、写信、保存草稿、查看已发送邮件
-- 使用附件、签名、模板、图床和联系人
-- 查看发件方 SPF、DKIM、DMARC 认证提示和原始邮件
-- 查看登录历史和临时发信申请记录
-- 通过反馈与工单页面联系管理员
-
-## 不是什么
-
-NodeMail 不是公共邮件营销系统，也不鼓励群发、滥发或绕过反垃圾邮件规则。为了保护服务信誉，发信权限、频率和异常行为会受到限制。
-
-## 客户端连接
-
-如果你只使用网页邮箱，直接访问 `https://to9.us/login` 即可。
-
-如果后续需要在第三方邮件客户端里使用 IMAP / POP3 / SMTP，默认建议统一使用 `mail.to9.us` 作为服务器地址。新增邮箱域名不代表一定需要单独的客户端证书，只有管理员明确提供 `mail.你的域名` 这种连接地址时，才需要按该主机名配置证书。
+邮件在传输过程中使用 TLS，并支持 DKIM 签名、SPF/DMARC 检查和反垃圾处理。平台没有宣称端到端加密或服务端不可读，请不要把普通邮箱当作端到端加密通信工具。

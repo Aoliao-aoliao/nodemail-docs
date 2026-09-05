@@ -1,16 +1,16 @@
 :root {
-  --vp-c-brand-1: #2563eb;
-  --vp-c-brand-2: #3b82f6;
-  --vp-c-brand-3: #60a5fa;
+  --vp-c-brand-1: #7e14ff;
+  --vp-c-brand-2: #863bff;
+  --vp-c-brand-3: #47bfff;
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(120deg, #2563eb, #06b6d4 55%, #22c55e);
-  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(37, 99, 235, 0.34), rgba(34, 197, 94, 0.24));
+  --vp-home-hero-name-background: linear-gradient(120deg, #7e14ff, #863bff 55%, #47bfff);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(126, 20, 255, 0.34), rgba(71, 191, 255, 0.24));
   --vp-home-hero-image-filter: blur(44px);
 }
 
 .VPHomeHero .image-src {
   max-width: 260px;
-  filter: drop-shadow(0 24px 60px rgba(37, 99, 235, 0.3));
+  filter: drop-shadow(0 24px 60px rgba(126, 20, 255, 0.3));
 }
 
 .VPFeature {
@@ -18,5 +18,5 @@
 }
 
 .custom-block.tip {
-  border-color: rgba(37, 99, 235, 0.28);
+  border-color: rgba(126, 20, 255, 0.28);
 }
