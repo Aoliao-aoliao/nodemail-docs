@@ -27,16 +27,16 @@ features:
   - title: 标准邮件协议
     details: 通过应用专用密码连接 IMAPS、POP3S 和 SMTP Submission，继续使用常见桌面与移动客户端。
   - title: 安全与可达性
-    details: SPF、DKIM、DMARC 状态提示，rspamd 反垃圾与隔离区，登录限流、TOTP 两步验证和审计日志。
+    details: SPF、DKIM、DMARC 状态提示，rspamd 反垃圾与持久隔离，Turnstile、TOTP 两步验证、会话撤销和审计日志。
   - title: 套餐与计费
-    details: 个人 Pro、企业套餐、订单、钱包、在线支付、兑换码以及取消和恢复订阅流程。
+    details: 个人免费基础层、个人 Pro、企业套餐、订单、钱包、在线支付、兑换码，以及个人订阅的取消和恢复流程。
   - title: 通知与开放能力
     details: 站内通知、浏览器通知、Telegram 通知、系统公告、个人 API 密钥和 OpenAPI 参考。
 ---
 
 ## 当前正式版本
 
-本文档对应 2026 年 9 月 5 日上线的草丛 Mail 平台升级。正式入口如下：
+本文档对应 2026 年 9 月 6 日完成审查与升级的草丛 Mail 平台。正式入口如下：
 
 - 产品官网：<https://to9.us/>
 - 邮箱应用：<https://to9.us/app/>
@@ -51,6 +51,7 @@ features:
 | 身份 | 建议入口 | 主要内容 |
 | --- | --- | --- |
 | 普通用户 | [快速开始](/guide/quick-start) | 注册登录、创建邮箱、收发邮件、安全和通知 |
+| NodeLoc 用户 | [NodeLoc 身份与等级](/guide/nodeloc-identity) | 账号来源、绑定、真实 TL 等级与本站配额映射 |
 | 企业所有者或管理员 | [企业邮局](/guide/organizations) | 组织、成员、自有域名、企业邮箱、品牌和套餐 |
 | 平台管理员 | [后台总览](/admin/overview) | 用户、域名、邮件流、发信策略、订单与平台设置 |
 | 自托管维护者 | [Docker 部署](/operations/deployment) | 服务结构、环境变量、迁移、升级和排障 |
@@ -60,4 +61,4 @@ features:
 
 草丛 Mail 是正常通信和企业邮箱平台，不是群发营销工具。系统会按用户、域名、套餐和管理员策略限制发信权限与频率，并可能拦截高风险收件人或异常内容。
 
-邮件在传输过程中使用 TLS，并支持 DKIM 签名、SPF/DMARC 检查和反垃圾处理。平台没有宣称端到端加密或服务端不可读，请不要把普通邮箱当作端到端加密通信工具。
+网页和客户端连接使用 TLS；服务器向外部 MX 投递时优先使用对方提供的 STARTTLS，远端握手失败时可能按邮件互通规则退回明文 SMTP。平台支持 DKIM 签名、SPF/DMARC 检查和反垃圾处理，但没有宣称端到端加密或服务端不可读，请不要把普通邮箱当作端到端加密通信工具。

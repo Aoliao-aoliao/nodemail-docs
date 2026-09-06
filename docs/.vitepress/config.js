@@ -32,7 +32,8 @@ export default defineConfig({
         text: '开始使用',
         items: [
           { text: '快速开始', link: '/guide/quick-start' },
-          { text: '账号与安全', link: '/guide/account-security' }
+          { text: '账号与安全', link: '/guide/account-security' },
+          { text: 'NodeLoc 身份与等级', link: '/guide/nodeloc-identity' }
         ]
       },
       {
@@ -40,6 +41,8 @@ export default defineConfig({
         items: [
           { text: '收发与整理邮件', link: '/guide/mail' },
           { text: '邮箱管理', link: '/guide/mailboxes' },
+          { text: '联系人与收信规则', link: '/guide/contacts-rules' },
+          { text: '共享、转让与清理', link: '/guide/sharing-transfer-cleanup' },
           { text: '发信与投递', link: '/guide/sending-delivery' },
           { text: '企业邮局', link: '/guide/organizations' },
           { text: '设置与通知', link: '/guide/settings' },
@@ -54,6 +57,7 @@ export default defineConfig({
           { text: '后台总览', link: '/admin/overview' },
           { text: '用户与邮箱', link: '/admin/users-mailboxes' },
           { text: '域名与邮件投递', link: '/admin/domains-delivery' },
+          { text: '注册、SMTP 与 Turnstile', link: '/admin/registration-smtp-turnstile' },
           { text: '平台设置与安全', link: '/admin/platform-settings' },
           { text: '套餐、订单与兑换码', link: '/admin/plans-orders' }
         ]
@@ -63,6 +67,7 @@ export default defineConfig({
         items: [
           { text: 'Docker 部署', link: '/operations/deployment' },
           { text: '升级与数据迁移', link: '/operations/upgrade' },
+          { text: '安全运行清单', link: '/operations/security' },
           { text: '上线检查记录', link: '/operations/verification' },
           { text: '检查与故障排查', link: '/operations/troubleshooting' }
         ]
